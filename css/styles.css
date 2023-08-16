@@ -3,7 +3,8 @@
     --blueLoas:#00B0F0;
     --greenLoas: #36D266;
     --purpleLoas: #7030A0;
-    --blackLoas: #0000;
+    --oscuro: #0000;
+    --whiteLoas:#ffff; 
 }
 html{
     font-size: 62.5%;
@@ -27,12 +28,30 @@ body{
     font-weight: 600;
 }
 
-.navegacion-principal {
+.navegacion-bg{
     background-color: var(--mainLoas);
+}
 
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between; 
 }
 
 .contenedor {
     width: 120rem;
     margin: 0 auto;
+}
+
+.navegacion-principal a {
+    color:var(--whiteLoas);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--blueLoas);
+    color: black;
 }
