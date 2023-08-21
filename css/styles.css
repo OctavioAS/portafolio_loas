@@ -16,26 +16,7 @@ html{
 body{
     font-size: 16px;/* 1 rem= 10px*/
     font-family: 'Archivo', sans-serif;
-    font-weight: 400;
-}
-
-.bg-titulo{
-    background-color: black;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 4.8rem;
-    color: var(--mainLoas);
-    font-family: 'Archivo', sans-serif;
-    font-weight: 600;
-}
-
-.titulo span {
-    font-size: 2rem;
-    color: var(--blueLoas);
-    font-family: 'Handjet', cursive;
-    font-weight: 600;
+    font-weight: 400px;
 }
 
 .navegacion-bg{
@@ -67,6 +48,7 @@ body{
     font-size: 2rem;
     font-family: 'Archivo', sans-serif;
     font-weight: bold;
+    text-transform:uppercase;
     padding: 1rem;
 }
 
@@ -75,10 +57,146 @@ body{
     color: black;
 }
 
+.bienvenida{
+    font-size: 4.8rem;
+    color: var(--mainLoas);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin:0;
+}
+
+
+.titulo {
+    font-size: 4.8rem;
+    color: var(--mainLoas);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:capitalize;
+    text-align: center;
+    margin:0;
+}
+
+.titulo span {
+    position: relative;
+
+    font-size: 2rem;
+    color: var(--blueLoas);
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
+
+.bg-titulo{
+    background-color: white;
+    height: 55px;
+    width: auto;
+    margin:10px 0;
+}
+
+
+
 .portada {
     background-image: url(../images/portada_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    padding: 30px;
+    height: 40rem;
+    padding: 2rem;
+
+    
+}
+
+.contenedor-cajas{
+    /*background-color: #7030A0;*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.caja1{
+    /*background-color: black;*/
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Gruppo', sans-serif;
+
+    height: 200px;
+    width:400px;
+
+    line-height: 110px;
+    text-align:left;
+
+    margin: 5px;
+}
+
+.caja2{
+    /*background-color: black;*/
+    color: white;
+    font-size: 25px;
+    font-family: 'Gruppo', sans-serif;
+
+    height: 200px;
+    width:300px;
+
+    line-height: 110px;
+    text-align:right;
+
+    margin: 5px;
+}
+
+.parrafo{
+    margin: 0;
+    height: 60px;
+
+}
+
+.titulo-tecno {
+    background-color: white;
+    font-size: 4.8rem;
+    color: var(--greenLoas);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin:0;
+}
+
+.tecno{
+    background-color: var(--greenLoas);
+    display: flexbox;
+    margin: 100px;
+}
+
+.titulo-proyecto {
+    background-color: white;
+    font-size: 4.8rem;
+    color: var(--purpleLoas);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin:0;
+}
+
+.proyectos{
+    background-color: var(--purpleLoas);
+    display: flexbox;
+    margin: 100px;
+}
+
+.titulo-contacto {
+    background-color: white;
+    font-size: 4.8rem;
+    color: var(--mainLoas);
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin:0;
+}
+
+.contacto{
+    background-color: var(--mainLoas);
+    display: flexbox;
+    margin: 100px;
 }
