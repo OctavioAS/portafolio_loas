@@ -111,10 +111,10 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    height: 25rem;;
 }
 
 .caja1{
-    /*background-color: black;*/
     color: white;
     font-weight: 400;
     font-size: 25px;
@@ -123,29 +123,26 @@ body{
     height: 200px;
     width:400px;
 
-    line-height: 110px;
+    line-height: 105px;
     text-align:left;
 
     margin: 5px;
+
+    
 }
 
 .caja2{
-    /*background-color: black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    
     color: white;
     font-size: 25px;
     font-family: 'Gruppo', sans-serif;
-
-    height: 200px;
-    width:300px;
-
-    line-height: 110px;
-    text-align:right;
-
-    margin: 5px;
 }
 
 .parrafo{
-    margin: 0;
+    margin:  0;
     height: 60px;
 
 }
@@ -199,4 +196,24 @@ body{
     background-color: var(--mainLoas);
     display: flexbox;
     margin: 100px;
+}
+
+.boton{
+    background-color: var(--mainLoas);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+
+    
+    height: 3rem;
+    width: 20rem;
+    margin: 3.7rem 0 2rem 0;
+}
+
+.caja2 a:hover {
+    background-color: var(--blueLoas);
+    color: black;
 }
