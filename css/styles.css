@@ -6,10 +6,17 @@
     --oscuro: #0000;
     --whiteLoas:#ffff; 
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
 *, *:before, *:after{
     box-sizing: inherit;
 }
@@ -17,7 +24,7 @@ body{
     font-size: 16px;/* 1 rem= 10px*/
     font-family: 'Archivo', sans-serif;
     font-weight: 400px;
-    background-color: darkslateblue;
+    background-color:antiquewhite;
 }
 
 .navegacion-bg{
@@ -100,11 +107,12 @@ body{
 .portada {
     background-image: url(../images/portada_image.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 40rem;
+    background-size:cover;
+    height: 50rem;
     padding: 2rem;
-
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contenedor-cajas{
@@ -112,7 +120,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    height: 25rem;;
+    align-items: center;
+    height: 25rem;
 }
 
 .caja1{
@@ -145,8 +154,7 @@ body{
 }
 
 .parrafo{
-    margin:  0;
-    height: 60px;
+    height: 5rem;
 
 }
 
@@ -162,9 +170,51 @@ body{
 }
 
 .tecno{
+    margin: 2rem;
+    padding: 2rem;
     background-color: var(--greenLoas);
-    display: flexbox;
-    margin: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
+
+
+.card{
+    position: relative;
+    background-color: aqua;
+
+    width: 30rem;
+    height: 30rem;
+}
+
+.car div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+
+.front{
+
+    border-radius: 10px;
+    background-color:antiquewhite;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.back{
+    
+    border-radius: 10px;
+    background-color:#F2646E;
+    transform: perspective(500px) rotateY(180deg);
 }
 
 .titulo-proyecto {
@@ -213,7 +263,7 @@ body{
     
     height: 3rem;
     width: 20rem;
-    margin: 3.7rem 0 2rem 0;
+    margin: 3.7rem 0 3.7rem 0;
 }
 
 .caja2 a:hover {
@@ -222,16 +272,12 @@ body{
 }
 
 /*BACKGROUND ALL WEB SITE*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .loader{
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
 }
 
 .loader span{
@@ -279,7 +325,7 @@ body{
     200px -200px 20px #00efff,
     -200px 200px 0 #00efff,
     -200px 200px 20px #00efff;
-    transform-origin: 250px;
+    transform-origin: 250px;   
 }
 
 @keyframes animate{
@@ -296,3 +342,25 @@ body{
     }
 }
 
+.nameWebDeveloper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+    color: aliceblue;
+    background-color:#F2646E;
+    border-radius: 50%;
+}
+
+.spanName{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color:#F2646E;
+    font-family: 'Handjet', cursive;
+    font-weight: 600;
+}
