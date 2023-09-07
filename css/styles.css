@@ -169,10 +169,12 @@ body{
     margin:0;
 }
 
+
+/*tarjetas seccion tecnologias*/
+
 .tecno{
-    margin: 2rem;
-    padding: 2rem;
-    background-color: var(--greenLoas);
+    background-color:darkseagreen;
+    margin: 15rem;
 
     display: flex;
     align-items: center;
@@ -180,42 +182,62 @@ body{
     min-height: 100vh;
 }
 
-
-
-
-
 .card{
     position: relative;
-    background-color: aqua;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30rem;
     height: 30rem;
 }
 
-.car div{
+
+.card .front{
     position: absolute;
-    width: 100%;
+
     height: 100%;
+    width: 100%;
+
     display: flex;
-    flex-direction: row;
-    align-self: center;
+    align-items: center;
     justify-content: center;
-    backface-visibility: hidden;
-}
 
-.front{
-
-    border-radius: 10px;
     background-color:antiquewhite;
     transform: perspective(500px) rotateY(0deg);
+    transition: 1s;
+    border-radius: 50%;
 }
 
-.back{
-    
-    border-radius: 10px;
+.card .back{
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backface-visibility: hidden;
     background-color:#F2646E;
     transform: perspective(500px) rotateY(180deg);
+    transition: 1s;
+    border-radius: 50%;
+}   
+
+.card:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}   
+
+.card:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}  
+
+.alinear-parrafos-tecno{
+    text-align: center;
 }
+
+/*tarjetas seccion tecnologias*/
 
 .titulo-proyecto {
     background-color: white;
