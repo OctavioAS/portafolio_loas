@@ -61,7 +61,7 @@ body{
 }
 
 .navegacion-principal a:hover {
-    background-color: var(--blueLoas);
+    background-color: darkseagreen;
     color: black;
 }
 
@@ -116,7 +116,6 @@ body{
 }
 
 .contenedor-cajas{
-    /*background-color: #7030A0;*/
     display: flex;
     flex-direction: row;
     justify-content:space-between;
@@ -125,18 +124,18 @@ body{
 }
 
 .caja1{
-    color: white;
-    font-weight: 400;
-    font-size: 25px;
-    font-family: 'Gruppo', sans-serif;
-
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    
     height: 200px;
     width:350px;
 
-    line-height: 105px;
-    text-align:left;
-
-    margin: 5px;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
 }
 
 .caja2{
@@ -149,8 +148,9 @@ body{
     width:350px;
 
     color: white;
-    font-size: 25px;
-    font-family: 'Gruppo', sans-serif;
+    font-size: 2rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
 }
 
 .parrafo{
@@ -158,28 +158,32 @@ body{
 
 }
 
-.titulo-tecno {
-    background-color: white;
-    font-size: 4.8rem;
-    color: var(--greenLoas);
-    font-family: 'Archivo', sans-serif;
-    font-weight: 600;
-    text-transform:uppercase;
-    text-align: center;
-    margin:0;
-}
+
 
 
 /*tarjetas seccion tecnologias*/
 
+.titulo-tecno {
+    background-color: antiquewhite;
+    font-size: 4.8rem;
+    color: darkseagreen;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 15rem 0 0 0;
+}
+
 .tecno{
     background-color:darkseagreen;
-    margin: 15rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    flex-wrap: wrap;
+
+    min-height: 70vh;
+    padding: 1rem;
 }
 
 .card{
@@ -187,8 +191,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30rem;
-    height: 30rem;
+    width: 23rem;
+    height: 23rem;
 }
 
 
@@ -199,6 +203,7 @@ body{
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -273,7 +278,37 @@ body{
     margin: 100px;
 }
 
-.boton{
+.boton1{
+    background-color: var(--mainLoas);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    text-transform: lowercase;
+    border-radius: 0.5rem;
+
+    
+    height: 3rem;
+    width: 45rem;
+    margin: 3.7rem 0 3.7rem 0;
+}
+
+.botonUbicacion{
+    background-color: var(--mainLoas);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+
+    
+    height: 3rem;
+    width: 45rem;
+    margin: 3.7rem 0 3.7rem 0;
+}
+
+.boton2{
     background-color: var(--mainLoas);
     color: white;
     text-decoration: none;
@@ -284,15 +319,19 @@ body{
 
     
     height: 3rem;
-    width: 20rem;
+    width: 45rem;
     margin: 3.7rem 0 3.7rem 0;
 }
 
-.caja2 a:hover {
-    background-color: var(--blueLoas);
+.caja1 a:hover {
+    background-color: darkseagreen;
     color: black;
 }
 
+.caja2 a:hover {
+    background-color: darkseagreen;
+    color: black;
+}
 /*BACKGROUND ALL WEB SITE*/
 
 
@@ -320,17 +359,17 @@ body{
     height: 2.45rem;
     border-radius: 50%;
     background: transparent;
-    border: 4px solid #00efff;
+    border: 4px solid darkseagreen;
     box-sizing: border-box;
-    box-shadow:0 0 20px #00efff,
-    -30px -30px 0 #00efff,
-    -30px -30px 20px #00efff,
-    30px 30px 0 #00efff,
-    30px 30px 20px #00efff,
-    30px -30px 0 #00efff,
-    30px -30px 20px #00efff,
-    -30px 30px 0 #00efff,
-    -30px 30px 20px #00efff;
+    box-shadow:0 0 20px darkseagreen,
+    -30px -30px 0 darkseagreen,
+    -30px -30px 20px darkseagreen,
+    30px 30px 0 darkseagreen,
+    30px 30px 20px darkseagreen,
+    30px -30px 0 darkseagreen,
+    30px -30px 20px darkseagreen,
+    -30px 30px 0 darkseagreen,
+    -30px 30px 20px darkseagreen;
     animation: animate 15s linear infinite;
     animation-delay: calc(-0.25s * var(--i));
     transform-origin: 20px;
@@ -338,15 +377,15 @@ body{
 }
 
 .loader:hover span::before{
-    box-shadow:0 0 20px #00efff,
-    -200px -200px 0 #00efff,
-    -200px -200px 20px #00efff,
-    200px 200px 0 #00efff,
-    200px 200px 20px #00efff,
-    200px -200px 0 #00efff,
-    200px -200px 20px #00efff,
-    -200px 200px 0 #00efff,
-    -200px 200px 20px #00efff;
+    box-shadow:0 0 20px darkseagreen,
+    -200px -200px 0 darkseagreen,
+    -200px -200px 20px darkseagreen,
+    200px 200px 0 darkseagreen,
+    200px 200px 20px darkseagreen,
+    200px -200px 0 darkseagreen,
+    200px -200px 20px darkseagreen,
+    -200px 200px 0 darkseagreen,
+    -200px 200px 20px darkseagreen;
     transform-origin: 250px;   
 }
 
@@ -365,10 +404,10 @@ body{
 }
 
 .nameWebDeveloper{
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-size: 3rem;
     text-transform: uppercase;
     font-family: 'Archivo', sans-serif;
@@ -377,12 +416,68 @@ body{
     border-radius: 50%;
 }
 
+.nameWebDeveloper:hover{
+    background-color:darkseagreen;
+}
+
 .spanName{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color:#F2646E;
+    margin: 1rem;
+    font-size: 2.5rem;
+    color:black;
     font-family: 'Handjet', cursive;
     font-weight: 600;
+    text-transform: uppercase;
 }
+
+
+/*tarjetas seccion proyectos*/
+.titulo-proyecto {
+    background-color: antiquewhite;
+    font-size: 4.8rem;
+    color: darkslateblue;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 15rem 0 0 0;
+}
+
+.proyecto{
+    background-color: darkslateblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-height: 70vh;
+    padding: 1rem;
+}
+
+/*tarjetas seccion proyecto*/
+
+/*tarjetas seccion responsive*/
+.titulo-responsive{
+    background-color: antiquewhite;
+    font-size: 4.8rem;
+    color: dodgerblue;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align: center;
+    margin: 15rem 0 0 0;
+}
+
+.responsive{
+    background-color:dodgerblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-height: 70vh;
+    padding: 1rem;
+}
+
+/*tarjetas seccion responsive*/
